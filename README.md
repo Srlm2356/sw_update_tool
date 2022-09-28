@@ -1,18 +1,10 @@
 # sw_update_tool
 1. Имя config задается через команду ./xmlSetting [имя config], например ./xmlSetting NameFile  
 	1.1. После чего в директории, где расположен xmlSetting, появится файл с *.xml расширением с автоматически созданным шаблоном параметров.  
-	1.2. Содержимое полей:  
-		<Computers>  
-		<Media>  
-		<Getversion>  
-		<Getmedia>  
-		<Update>  
-		где name - наименование параметров  
-		
-		В Getversion - $hostname соответствует параметру Computers <hostname>  
-		В Getmedia - $medianame соответствует параметру Media <medianame>  
-		Update - как для Getverson и Getmedia  
-	1.3. После редактирования полей, файл необходимо поместить в папку к основной программе update.  
+	     В Getversion - $hostname соответствует параметру Computers <hostname>  
+	     В Getmedia - $medianame соответствует параметру Media <medianame>  
+             Update - как для Getverson и Getmedia  
+	1.2. После редактирования полей, файл необходимо поместить в папку к основной программе update.  
 2. Запуск программы осуществляется через команду ./update.  
    На вход может быть обьявлено несколько аргументов:  
 		1) ./update [путь к конф файлу]   
