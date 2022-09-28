@@ -1,0 +1,41 @@
+<App>
+ <!--This section for choosing $hostname-->
+ <Computers>
+  <hostname id="1">
+   <name>cpc11lt1</name>
+  </hostname>
+  <hostname id="2">
+   <name>cpc12lt1</name>
+  </hostname>
+  <hostname id="3">
+   <name>cpc13lt1</name>
+  </hostname>
+ </Computers>
+ <!--This section for choosing $medianame-->
+ <Media>
+  <medianame id="1">
+   <name>usb-flash</name>
+  </medianame>
+  <medianame id="2">
+   <name>sd-flash</name>
+  </medianame>
+ </Media>
+ <!--This section for getting current version state-->
+ <Getversion>
+  <getrVersionName id="1">
+   <name>ssh pcs1@$hostname check_sum</name>
+  </getrVersionName>
+ </Getversion>
+ <!--this section for getting media info-->
+ <Getmedia>
+  <getMediaName id="1">
+   <name>et_media_info.scr $medianame</name>
+  </getMediaName>
+ </Getmedia>
+ <!--This section for starting SW update-->
+ <Update>
+  <updateName id="1">
+   <name>remote_sw_install.scr $hostname root pcs1 $medianame  /tmp</name>
+  </updateName>
+ </Update>
+</App>
